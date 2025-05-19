@@ -66,3 +66,31 @@ body, html {
     font-size: 1.1rem;
     opacity: 0.8;
 }
+
+.signup-form {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.signup-form input[type="email"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    max-width: 80%;
+    margin-right: 0.5rem;
+}
+
+.signup-form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #ffffff;
+    color: #222;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #eaeaea;
+}
