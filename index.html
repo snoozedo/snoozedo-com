@@ -2,41 +2,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Snooze & Do – Coming Soon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Snooze & Do – Coming Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <img src="background.png" alt="Snooze & Do Background" class="background">
-        <div class="overlay">
-            <div class="logo">
-    <img src="moon.png" alt="Moon Icon" class="moon-icon">
-	</div>
-			<h1 class="title">Snooze & Do</h1>
-            <p class="claim">A better way to snooze.<br>A smarter way to do.</p>
-            <p class="coming-soon">Coming Soon</p>
+  <div class="container">
+    <img src="background.png" alt="Background" class="background">
+    <div class="overlay">
+      <div class="logo">
+        <img src="moon.png" alt="Moon Icon" class="moon-icon">
+      </div>
+      <h1 class="title">Snooze & Do</h1>
+      <p class="claim">A better way to snooze.<br>A smarter way to do.</p>
+      <p class="coming-soon">Coming Soon</p>
 
-<form name="notify" method="POST" data-netlify="true" class="signup-form">
-  <input type="hidden" name="form-name" value="notify">
+      <form name="notify" method="POST" data-netlify="true" class="signup-form">
+        <input type="hidden" name="form-name" value="notify">
+        <label for="email">Want to be notified? Enter your email:</label><br>
+        <input type="email" name="email" id="email" required placeholder="you@example.com"><br>
+        <button type="submit">Notify Me</button>
+      </form>
 
-  <label for="email">Want to be notified? Enter your email:</label><br>
-  <input type="email" name="email" id="email" required placeholder="you@example.com"><br>
-  
-  <button type="submit">Notify Me</button>
-</form>
-
-<div id="thank-you" style="display: none;" class="thank-you-message">
-  Thanks! You're on the list.
-</div>
-
-        </div>
+      <div id="thank-you" class="thank-you-message" style="display: none;">
+        ✅ Thanks! You're on the list.
+      </div>
     </div>
+  </div>
 
-<form name="notify" netlify hidden>
-  <input type="email" name="email">
-</form>
-    
+  <!-- Invisible form to help Netlify detect it -->
+  <form name="notify" netlify hidden>
+    <input type="email" name="email">
+  </form>
 </body>
 </html>
