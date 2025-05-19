@@ -20,8 +20,10 @@
 
 <form name="notify" method="POST" data-netlify="true" class="signup-form">
   <input type="hidden" name="form-name" value="notify">
+  
   <label for="email">Want to be notified? Enter your email:</label><br>
   <input type="email" name="email" id="email" required placeholder="you@example.com"><br>
+  
   <button type="submit">Notify Me</button>
 </form>
 
@@ -31,6 +33,10 @@
 
         </div>
     </div>
+
+<form name="notify" netlify hidden>
+  <input type="email" name="email">
+</form>
     
 </body>
 </html>
