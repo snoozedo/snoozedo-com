@@ -18,13 +18,18 @@
             <p class="claim">A better way to snooze.<br>A smarter way to do.</p>
             <p class="coming-soon">Coming Soon</p>
 
-	<form name="notify" method="POST" data-netlify="true">
-	  <input type="hidden" name="form-name" value="notify">
-  	<label for="email">Want to be notified? Enter your email:</label><br>
-  	<input type="email" name="email" id="email" required placeholder="you@example.com">
-  	<br>
-  	<button type="submit">Notify Me</button>
-	</form>
+<form name="notify" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="signup-form">
+  <input type="hidden" name="form-name" value="notify">
+  
+  <label for="email">Want to be notified? Enter your email:</label><br>
+  <input type="email" name="email" id="email" required placeholder="you@example.com"><br>
+  <button type="submit">Notify Me</button>
+</form>
+
+<div id="thank-you" style="display: none;" class="thank-you-message">
+  Thanks! You're on the list.
+</div>
+
         </div>
     </div>
     
