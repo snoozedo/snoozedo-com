@@ -100,10 +100,3 @@ body, html {
 .signup-form button:hover {
     background-color: #eaeaea;
 }
-
-.thank-you-message {
-    margin-top: 1.5rem;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-}
